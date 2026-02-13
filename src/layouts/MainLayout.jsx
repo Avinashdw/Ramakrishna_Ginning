@@ -11,7 +11,9 @@ const CottonRateBar = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const isMock = !import.meta.env.VITE_FIREBASE_API_KEY || import.meta.env.VITE_FIREBASE_API_KEY === 'your-api-key';
+        const isMock = !import.meta.env.VITE_FIREBASE_API_KEY ||
+            import.meta.env.VITE_FIREBASE_API_KEY === 'your-api-key' ||
+            import.meta.env.VITE_FIREBASE_API_KEY === 'AIzaSyAqNWJKqXZKXqYbGxWJXqYbGxWJXqYbGxW';
 
         if (isMock) {
             const fetchMockRate = () => {
