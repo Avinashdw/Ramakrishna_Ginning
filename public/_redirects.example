@@ -1,0 +1,23 @@
+/* Netlify SPA Redirects */
+/* Redirect all routes to index.html for React Router */
+/* https://docs.netlify.com/routing/redirects/rewrites-proxies/#history-pushstate-and-single-page-applications */
+
+/*
+  Usage: Put this file in the 'public' folder of your Vite project.
+  Vite will copy it to the root of the 'dist' folder during build.
+*/
+
+/* Catch-all for React Router */
+/* This ensures that deep links work on Netlify */
+/* Example: site.com/admin/dashboard will be handled by React */
+
+/* Forward all requests to index.html */
+/* 200 is for internal rewrite */
+
+/*
+  In Netlify, the syntax is:
+  /path/to/thing  /redirect/to/thing  [STATUS_CODE]
+*/
+
+/* THE ACTUAL CONTENT BELOW */
+/* (This file should be named _redirects exactly) */

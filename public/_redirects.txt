@@ -1,0 +1,13 @@
+/*  THIS IS THE ACTUAL FILE FOR NETLIFY  */
+/*  Vite processes files in /public/ and puts them in /dist/  */
+
+/*  All routes -> index.html (SPA handling)  */
+/*  Status 200 tells Netlify to rewrite internally  */
+
+/*  /path      /redirect    [status]  */
+/*  ---------  -----------  --------  */
+/*  /*         /index.html  200       */
+
+/*  Contents:  */
+/*  ----------  */
+/*  /* /index.html 200  */
